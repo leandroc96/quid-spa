@@ -1,0 +1,32 @@
+.card-custom {
+  max-width: 350px; /* ancho máximo */
+  margin: 0 auto;   /* centrado horizontal */
+}
+
+.card-body-custom {
+  max-height: 240px; /* altura fija */
+  overflow: hidden;
+}
+
+.card-custom {
+  max-width: 350px;
+  margin: 0 auto;
+  border: none;
+  box-shadow: none; /* o poné la sombra que prefieras */
+}
+
+.card-text-custom {
+  display: -webkit-box;
+  -webkit-line-clamp: 5; /* mostrar solo 3 líneas */
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 1rem;
+  padding: 0 1rem;
+}
+

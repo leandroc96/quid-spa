@@ -1,0 +1,20 @@
+.hero {
+  background: url('/hero.png') center center/cover no-repeat;
+  min-height: 90vh;
+  position: relative;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.hero h1,
+.hero p {
+  font-family: var(--font-family-main);
+  position: relative;
+  z-index: 1;
+  color: #ffffff;
+}
