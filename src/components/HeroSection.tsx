@@ -1,16 +1,21 @@
-import { Container } from 'react-bootstrap';
 import './HeroSection.css';
 
-
-function HeroSection() {
+export const HeroSection = () => {
   return (
-    <section className="hero d-flex align-items-center text-center text-white">
-      <Container>
-        <h1 className="display-3 fw-bold"> Quid</h1>
-        <p className="lead">Soluciones estratégicas en servicios de salud</p>
-      </Container>
+    <section className="hero-section">
+      <div className="hero-content">
+        <img src="/logo-quid.png" alt="Quid" className="hero-logo" />
+        <h1>Consultoría integral en servicios de salud</h1>
+        <p>
+          Soluciones personalizadas para optimizar la gestión clínica, operativa y administrativa.
+        </p>
+        <a href="#about">
+          <button>Conocenos</button>
+        </a>
+      </div>
     </section>
   );
-}
+};
+
 
 export default HeroSection;

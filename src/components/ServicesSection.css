@@ -2,6 +2,9 @@
   padding: 4rem 1rem;
   background-color: #f0f2f5;
 }
+#asistencial {
+  scroll-margin-top: 80px; /* o la altura exacta de tu navbar */
+}
 
 .services-section h2 {
   text-align: center;

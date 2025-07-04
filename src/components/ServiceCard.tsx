@@ -9,7 +9,7 @@ interface ServiceCardProps {
 
 function ServiceCard({ Icon, title, description }: ServiceCardProps) {
   return (
-    <Card className="text-center shadow-sm h-100 border-0 card-custom">
+    <Card className="text-center ">
       <Card.Body className="card-body-custom">
         <Icon size={50} className="text-primary mb-3" />
         <Card.Title>{title}</Card.Title>

@@ -44,75 +44,57 @@ function ServicesSection() {
   {
     Icon:FaHospital,
     title:"Programa PROA (Optimización de Antimicrobianos)",
-    category: "Asistencial",
+    category: "Servicios",
     description:"Implementación de guías y protocolos adaptados, control de prescripción, seguimiento microbiológico y análisis de indicadores clínicos con informes de mejora."
   },
   {
     Icon:FaHospital,
     title:"Consultoría Modulada Online Médico-Médico",
-    category: "Asistencial",
+    category: "Servicios",
     description:"Consultoría médica online en diversas especialidades y soporte itinerante para instituciones sin cobertura."
   },
   {
     Icon:FaHospital,
     title:"Auditoría clínica y operativa",
-    category: "Asistencial",
+    category: "Servicios",
     description:"Auditoría de consumos, personal y tiempos clínicos para mejorar la gestión operativa y económica."
   },
   {
     Icon:FaHospital,
     title:"Evoluciones en historia clínica electrónica",
-    category: "Asistencial",
+    category: "Servicios",
     description:"Evoluciones realizadas por profesionales matriculados y especialistas acreditados, garantizando calidad y validez clínica certificada."
   },
   {
     Icon:FaHospital,
     title:"Modelos de negocio y propuesta de valor",
-    category: "Asistencial",
+    category: "Servicios",
     description:"Estrategias innovadoras para expansión y creación de valor en ecosistemas de salud, apoyadas en análisis de datos."
   },
 
 ]
   return (
-    <section id="services" className="p-5 bg-light">
-  <Container>
-    <div className="text-center">
-      <h3 id="gestion" className="section-title">Gestión Institucional</h3>
-    </div>
-    
-    <Row className="gy-4">
-      {services
-        .filter(service => service.category === "Gestión")
-        .map((service, idx) => (
-          <Col md={4} key={idx}>
-            <ServiceCard
-              Icon={service.Icon}
-              title={service.title}
-              description={service.description}
-            />
-          </Col>
-        ))}
-    </Row>
-    <div className='text-center'>
-      <h3 id="asistencial" className="mb-4 mt-5 text-center section-title">Servicios Asistenciales</h3>
-    </div>
-    
-    <Row className="gy-4">
-      {services
-        .filter(service => service.category === "Asistencial")
-        .map((service, idx) => (
-          <Col md={4} key={idx}>
-            <ServiceCard
-              Icon={service.Icon}
-              title={service.title}
-              description={service.description}
-            />
-          </Col>
-        ))}
-    </Row>
+  <section id="asistencial">
+    <Container>
+      <div className="text-center">
+        <h3 className="section-title">Servicios Asistenciales</h3>
+      </div>
 
-  </Container>
-</section>
+      <Row className="gy-4">
+        {services
+          .filter(service => service.category === "Servicios")
+          .map((service, idx) => (
+            <Col md={4} key={idx}>
+              <ServiceCard
+                Icon={service.Icon}
+                title={service.title}
+                description={service.description}
+              />
+            </Col>
+          ))}
+      </Row>
+    </Container>
+  </section>
 
 
   );
